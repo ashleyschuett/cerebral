@@ -26,5 +26,7 @@ spec:
           properties:
             type:
               type: string
+            defaultScalingStrategy:
+              type: string  
             configuration:
               type: object

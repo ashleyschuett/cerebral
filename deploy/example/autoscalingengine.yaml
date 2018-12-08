@@ -4,6 +4,7 @@ metadata:
   name: containership
 spec:
   type: containership
+  defaultScalingStrategy: random
   configuration:
     address: https://stage-provision.containership.io
     tokenEnvVarName: CONTAINERSHIP_CLOUD_CLUSTER_API_KEY

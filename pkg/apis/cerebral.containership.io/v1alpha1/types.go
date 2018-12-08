@@ -142,8 +142,9 @@ type AutoscalingEngine struct {
 
 // AutoscalingEngineSpec describes the spec for the AutoscalingEngine
 type AutoscalingEngineSpec struct {
-	Type          string            `json:"type"`
-	Configuration map[string]string `json:"configuration"`
+	Type                   string            `json:"type"`
+	DefaultScalingStrategy string            `json:"defaultScalingStrategy"`
+	Configuration          map[string]string `json:"configuration"`
 }
 
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
